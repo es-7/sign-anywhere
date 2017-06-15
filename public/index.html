@@ -20,7 +20,7 @@
     </div>
     <div style="display:none" id='loginZone'>
         <p>登陆</p>
-        <p>Phone:<input id='phone' value='15801576442' /><input type="button" id='btnSendSMS' value="发送Code"></p>
+        <p>Phone:<input id='phone' value='' /><input type="button" id='btnSendSMS' value="发送Code"></p>
         <p>Code :<input id='code' maxlength="6" /><input type="button" id='btnLogin' value="登陆"></p>
     </div>
 
@@ -145,7 +145,7 @@
         rec_phone.innerText = localStorage.getItem('phone') || ''
         rec_loc.innerText = localStorage.getItem('loc') || ''
         rec_geoLoc.innerText = (localStorage.getItem('lng') || '') + ',' + (localStorage.getItem('lat') || '')
-        btnLogout.style.display =  qjydsid ? 'inline' :'none'
+        btnLogout.style.display = qjydsid ? 'inline' : 'none'
     }
 
 
