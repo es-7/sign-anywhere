@@ -40,7 +40,8 @@
     //初始化
     async function init() {
         let result = await locate()
-        city = result.content.address_detail.city
+        //city = result.content.address_detail.city
+        city = '北京市'
         defaultCity.innerText = city
         btnSearch.removeAttribute('disabled')
     }
