@@ -68,20 +68,20 @@ resultDemo = {
 }
 
 async function sign(longitude, latitude, crsfToken) {
-    var fd = new FormData();
-    fd.append('longitude', longitude);
-    fd.append('latitude', latitude);
-
     return fetch('/api/attendance/ajax-sign', {
         method: 'POST',
         headers: {
             'Origin': 'https://e.xinrenxinshi.com',
             'Referer': 'https://e.xinrenxinshi.com/index',
-            'X-CSRF-TOKEN': crsfToken
-        },
-        credentials: 'include',
-        body: fd
-    }).then(res => res.json())
+            'X-CSRF-TOKEN': crsfToken,
+            'Accept': 'application/json',
+           'Content-Type': 'application/json'
+                    },
+            credentials: 'include',
+            body: JSON.stringify({
+                   longitude, latitude
+               })
+             }).then(res => res.json())
 }
 
 
