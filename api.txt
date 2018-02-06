@@ -4,7 +4,7 @@ https://e.xinrenxinshi.com/site/ajax-send-sms-code/login
 Origin:https://e.xinrenxinshi.com
 Referer:https://e.xinrenxinshi.com/index
 
-mobile:15801576442
+mobile:
 
 
 
@@ -13,7 +13,7 @@ https://e.xinrenxinshi.com/site/ajax-login
 
 Referer:https://e.xinrenxinshi.com/index
 
-mobile:15801576442
+mobile:
 verify_code:123456
 verify_code_id:108097
 type:1
